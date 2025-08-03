@@ -5,7 +5,7 @@ public class Main {
     public static void ex6() {
         Student s1 = new Student("Yahli", 3);
         System.out.println(s1.toString());
-        if (s1.isHighschool(s1.Class())== true) System.out.println("The student is highschool");
+        if (s1.isHighSchool(s1.Class())== true) System.out.println("The student is highschool");
         else System.out.println("The student is not highschool");
     }
 }

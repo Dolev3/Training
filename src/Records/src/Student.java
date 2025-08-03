@@ -6,7 +6,7 @@
     public Student(String name, int ClassNum) {
         this(name,9,ClassNum);
     }
-    public boolean isHighschool(int Class) {
+    public boolean isHighSchool(int Class) {
         if (Class >= 10)
             return true;
         else
