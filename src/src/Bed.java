@@ -2,19 +2,19 @@ public class Bed {
     private double  height;
     private  int pillows;
     private String sheetsColor;
-    private int price;
+    private final int BED_PRICE;
 
-    public Bed (double height, int pillows, String SheetsColor, int price) {
+    public Bed (double height, int pillows, String SheetsColor, int BED_PRICE) {
         this.height = height;
         this.pillows = pillows;
         this.sheetsColor = SheetsColor;
-        this.price = price;
+        this.BED_PRICE = BED_PRICE;
     }
     public Bed (double height,  String SheetsColor) {
         this(height,1,SheetsColor,100);
     }
-    public int getPrice() {
-        return price;
+    public int getBED_PRICE() {
+        return BED_PRICE;
     }
     public double getHeight() {
         return height;

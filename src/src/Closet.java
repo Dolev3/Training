@@ -10,12 +10,12 @@ public class Closet {
     }
 
     public Shirt[] getShirtsBySize(Shirt[] shirts, int size) {
-        int Size = 0;
-        Shirt[] shirtsBySize  = new Shirt[Size];
+        int arrSize = 1;
+        Shirt[] shirtsBySize  = new Shirt[arrSize];
         for (int i = 0; i < shirts.length; i++) {
             if (shirts[i].getSize() == size) {
-                shirtsBySize[Size] = shirts[i];
-                Size++;
+                shirtsBySize[arrSize-1] = shirts[i];
+                arrSize++;
             }
         }
         return shirtsBySize;
