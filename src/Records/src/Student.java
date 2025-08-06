@@ -1,13 +1,13 @@
- public record Student(String name, int Class, int ClassNum) {
+ public record Student(String name, int grade, int classNum) {
     public String toString() {
-        return name+" is a student in the "+ Class+ "th grade and class number "+ClassNum;
+        return name+" is a student in the "+ grade+ "th grade and class number "+classNum;
     }
 
-    public Student(String name, int ClassNum) {
-        this(name,9,ClassNum);
+    public Student(String name, int classNum) {
+        this(name,9,classNum);
     }
-    public boolean isHighSchool(int Class) {
-        if (Class >= 10)
+    public boolean isHighSchool(int grade) {
+        if (grade >= 10)
             return true;
         else
             return false;
