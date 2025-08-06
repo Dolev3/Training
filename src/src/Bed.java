@@ -4,14 +4,14 @@ public class Bed {
     private String sheetsColor;
     private final int BED_PRICE;
 
-    public Bed (double height, int pillows, String SheetsColor, int BED_PRICE) {
+    public Bed (double height, int pillows, String sheetsColor, int BED_PRICE) {
         this.height = height;
         this.pillows = pillows;
-        this.sheetsColor = SheetsColor;
+        this.sheetsColor = sheetsColor;
         this.BED_PRICE = BED_PRICE;
     }
-    public Bed (double height,  String SheetsColor) {
-        this(height,1,SheetsColor,100);
+    public Bed (double height,  String sheetsColor) {
+        this(height,1,sheetsColor,100);
     }
     public int getBED_PRICE() {
         return BED_PRICE;
@@ -25,7 +25,7 @@ public class Bed {
     public String getSheetsColor() {
         return sheetsColor;
     }
-    public void setSheetsColor(String SheetsColor) {
-        this.sheetsColor = SheetsColor;
+    public void setSheetsColor(String sheetsColor) {
+        this.sheetsColor = sheetsColor;
     }
 }
