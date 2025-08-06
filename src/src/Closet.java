@@ -1,27 +1,33 @@
 public class Closet {
-    private Shirt[] Shirts;
+    private Shirt[] shirts;
 
     public Closet(Shirt[] Shirts) {
-        this.Shirts = Shirts;
+        this.shirts = Shirts;
     }
 
     public Shirt[] getShirts() {
-        return Shirts;
+        return shirts;
     }
 
     public Shirt[] getShirtsBySize(Shirt[] shirts, int size) {
-        int arrSize = 1;
+        int arrSize = 0;
+        for (int i = 0; i < shirts.length; i++) {
+            if (shirts[i].getSize() == size) {
+                arrSize++;
+            }
+        }
+        int index = 0;
         Shirt[] shirtsBySize  = new Shirt[arrSize];
         for (int i = 0; i < shirts.length; i++) {
             if (shirts[i].getSize() == size) {
-                shirtsBySize[arrSize-1] = shirts[i];
-                arrSize++;
+                shirtsBySize[index] = shirts[i];
+                index++;
             }
         }
         return shirtsBySize;
     }
 
-    public Shirt[] addShirts(Shirt add) {
-         return Util.addShirt(Shirts, add);
+    public void addShirts(Shirt add) {
+         shirts = Util.addShirt(shirts, add);
     }
 }

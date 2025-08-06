@@ -14,7 +14,7 @@ public class Bed {
     public Bed (double height,  String sheetsColor) {
         this(height,1,sheetsColor,DEFAULT_BED_PRICE);
     }
-    public int getBED_PRICE() {
+    public int getPrice() {
         return price;
     }
     public double getHeight() {
