@@ -21,7 +21,7 @@ public class Closet {
         return shirtsBySize;
     }
 
-    public Shirt[] addShirts(Shirt[] shirts, Shirt add) {
+    public Shirt[] addShirts(Shirt add) {
          return Util.addShirt(Shirts, add);
     }
 }
