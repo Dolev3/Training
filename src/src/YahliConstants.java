@@ -5,4 +5,8 @@ public class YahliConstants {
     public static String getFavoriteColor() {
         return FAVORITE_COLOR;
     }
+
+    public static int getShirtSize() {
+        return SHIRT_SIZE;
+    }
 }
