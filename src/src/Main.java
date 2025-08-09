@@ -5,7 +5,8 @@ public class Main {
     public static void ex_15() {
         Shirt [] shirts = new Shirt[10];
         Closet closet = new Closet(shirts);
-        Room r1 = new Room(closet, new Bed(8,2,"Blue",700) );
-        r1.set
+        Bed bed = new Bed(10,"Black");
+        Room r1 = new Room(closet, bed );
+        bed.setSheetsColor(YahliConstants.getFavoriteColor());
     }
 }
