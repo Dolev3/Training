@@ -8,4 +8,9 @@ public class Util {
         newShirts[shirts.length+1] = add;
         return newShirts;
     }
+
+    protected static boolean tolerance(double wanted, double num, double tolerance) {
+
+        return (num >= wanted - tolerance) && (num <= wanted + tolerance);
+    }
 }
