@@ -1,11 +1,12 @@
 public class Main {
+
     public static void main(String[] args) {
         ex_15();
         ex_20();
     }
 
     public static void ex_20() {
-        System.out.println(Util.tolerance(YahliConstants.HIGHEST_PRICE_FOR_BED,Bed.getDefaultBedPrice(),YahliConstants.TOLERANCE_FOR_PRICE_OF_BED));
+        System.out.println(Util.tolerance(YahliConstants.HIGHEST_PRICE_FOR_BED, Bed.getDefaultBedPrice(),YahliConstants.TOLERANCE_FOR_PRICE_OF_BED));
     }
 
     public static void ex_15() {
