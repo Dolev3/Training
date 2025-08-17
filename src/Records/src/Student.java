@@ -1,4 +1,5 @@
  public record Student(String name, int grade, int classNum) {
+
     public String toString() {
         return name+" is a student in the "+ grade+ "th grade and class number "+classNum;
     }
