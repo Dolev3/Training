@@ -1,6 +1,6 @@
 public class Room {
-    private final Closet closet;
-    private final Bed bed;
+    private  Closet closet;
+    private  Bed bed;
 
     public Room (Closet closet, Bed bed) {
         this.closet = closet;
@@ -8,8 +8,8 @@ public class Room {
     }
 
     public Room (Bed bed, Shirt[] shirts) {
-        this.bed = bed;
-        this.closet = new Closet(shirts);
+      Closet closet1 = new Closet(shirts);
+        new Room(closet1, bed);
     }
     public Closet getCloset() {
         return closet;
