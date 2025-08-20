@@ -9,19 +9,20 @@ public enum Month {
     JULY(31),
     AUGUST(31),
     SEPTEMBER(30),
-    OCTOBER(30),
+    OCTOBER(31),
     NOVEMBER(30),
     DECEMBER(31);
 
     private int daysInMonth;
 
+    private Month(int daysInMonth) {
+        this.daysInMonth = daysInMonth;
+    }
+
     public int getDaysInMonth() {
         return daysInMonth;
     }
 
-    private Month(int daysInMonth) {
-        this.daysInMonth = daysInMonth;
-    }
 
     public int getMonthNum() {
         return ordinal() + 1;
