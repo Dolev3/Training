@@ -1,17 +1,25 @@
 public class Bed {
+
     private double  height;
     private  int pillows;
-    private String SheetsColor;
+    private String sheetsColor;
+    private final int price;
+    private static final int DEFAULT_BED_PRICE = 1000;
 
-    public Bed (double height, int pillows, String SheetsColor) {
+
+    public Bed (double height, int pillows, String sheetsColor, int price) {
         this.height = height;
         this.pillows = pillows;
-        this.SheetsColor = SheetsColor;
+        this.sheetsColor = sheetsColor;
+        this.price = price;
     }
-    public Bed (double height,  String SheetsColor) {
-        this.height = height;
-        this.SheetsColor = SheetsColor;
-        this.pillows = 1;
+
+    public Bed (double height,  String sheetsColor) {
+        this(height,1,sheetsColor,DEFAULT_BED_PRICE);
+    }
+
+    public int getPrice() {
+        return price;
     }
     public double getHeight() {
         return height;
@@ -20,6 +28,14 @@ public class Bed {
         return pillows;
     }
     public String getSheetsColor() {
-        return SheetsColor;
+        return sheetsColor;
     }
+    public void setSheetsColor(String sheetsColor) {
+        this.sheetsColor = sheetsColor;
+    }
+    public static int getDefaultBedPrice() {
+        return DEFAULT_BED_PRICE;
+    }
+
 }
+
