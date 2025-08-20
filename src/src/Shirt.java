@@ -1,4 +1,5 @@
 public class Shirt {
+
     public int size;
     public String color;
 

@@ -21,10 +21,10 @@ public class Main {
         int count = 0;
         int index = 0;
         for (int i = 0; i < shirtsBySize.length; i++) {
-        if (shirtsBySize[i].getColor().equals(YahliConstants.FAVORITE_COLOR)) {
-            count++;
+            if (shirtsBySize[i].getColor().equals(YahliConstants.FAVORITE_COLOR)) {
+                count++;
+            }
         }
-    }
         Shirt[] shirtsBySizeAndColor = new Shirt[count];
         for (int i = 0; i < shirtsBySizeAndColor.length; i++) {
             if (shirtsBySize[i].getColor().equals(YahliConstants.FAVORITE_COLOR)) {
@@ -32,4 +32,5 @@ public class Main {
             }
         }
     }
+
 }

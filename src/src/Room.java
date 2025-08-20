@@ -1,4 +1,5 @@
 public class Room {
+
     private  Closet closet;
     private  Bed bed;
 
